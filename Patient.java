@@ -1,8 +1,8 @@
 package HW14_pharmacy_classes;
 
 public class Patient extends Person {
-	private int prescription_ID;
-	private Insurance insurance;
+	private int prescription_ID;// prescription of the patient
+	private Insurance insurance;// insurance of the patient
 
 	public int getPrescription_ID() {
 		return prescription_ID;
@@ -25,7 +25,7 @@ public class Patient extends Person {
 	}
 
 	public Patient(int ID, String name, String surname, int prescription_ID, Insurance insurance) {
-		setID(ID);
+		setId(ID);
 		setName(surname);
 		setSurname(surname);
 		setInsurance(insurance);
@@ -33,7 +33,7 @@ public class Patient extends Person {
 	}
 
 	public Patient(int ID, String name, String surname, int prescription_ID) {
-		setID(ID);
+		setId(ID);
 		setName(name);
 		setSurname(surname);
 		setPrescription_ID(prescription_ID);
